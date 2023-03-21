@@ -1,0 +1,38 @@
+name: geotools
+channels:
+  - conda-forge
+dependencies:
+  - python >= 3
+  - mamba
+  - conda
+  - pip
+  - setuptools=65
+  - dask
+  - netcdf4
+  - matplotlib
+  - cartopy
+  - cartopy_offlinedata
+  - jupyterlab
+  - geoviews
+  - distributed
+  - rasterio
+  - rioxarray
+  - xesmf
+  - nodejs
+  - dask-labextension
+  - gdal
+  - ca-certificates
+  - certifi
+  - openssl
+  - esmpy
+  - xarray
+  - numpy
+  - shapely
+  - cf_xarray
+  - sparse
+  - numba
+  - pyproj
+  - pillow
+  - cmocean
+  - progressbar2
+prefix: /opt/conda
