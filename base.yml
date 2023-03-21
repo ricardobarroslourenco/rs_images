@@ -1,4 +1,4 @@
-name: geotools
+name: base
 channels:
   - conda-forge
 dependencies:

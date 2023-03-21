@@ -39,9 +39,9 @@ RUN apt-get update > /dev/null && \
 
 ### Ricardo
 WORKDIR /app
-COPY geotools.yml /app/
+COPY base.yml /app/
 RUN conda install --yes mamba
-RUN mamba env create -f geotools.yml
+RUN mamba env update --name base --file base.yml --prune
 
 ENTRYPOINT ["tini", "--"]
 CMD [ "/bin/bash" ]
