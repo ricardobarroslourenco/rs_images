@@ -38,10 +38,22 @@ RUN apt-get update > /dev/null && \
     echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base" >> ~/.bashrc
 
 ### Ricardo
+#### Update environment
 WORKDIR /app
 COPY base.yml /app/
 RUN conda install --yes mamba
 RUN mamba env update --name base --file base.yml --prune
+
+#### Clean it and make it available again
+RUN conda clean --tarballs --index-cache --packages --yes && \
+    find ${CONDA_DIR} -follow -type f -name '*.a' -delete && \
+    find ${CONDA_DIR} -follow -type f -name '*.pyc' -delete && \
+    conda clean --force-pkgs-dirs --all --yes  && \
+    echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base" >> /etc/skel/.bashrc && \
+    echo ". ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base" >> ~/.bashrc
+
+
+### End Ricardo
 
 ENTRYPOINT ["tini", "--"]
 CMD [ "/bin/bash" ]

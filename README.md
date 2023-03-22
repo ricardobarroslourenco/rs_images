@@ -7,9 +7,13 @@ Released builds available at Docker Hub: https://hub.docker.com/repository/docke
 # Change Log
 Major updates here. For details, see the commit log.
 ## v0.2 
-Adds Cartopy offline bases (for HPC usage)
+- Adds Cartopy offline bases (for HPC usage)
 ### v0.2.2
-Fix issue of creating a new conda env (instead, will be updating the base env)
+- Fix issue of creating a new conda env (instead, will be updating the base env)
+
+### v0.2.3
+- Fix issue 
+- Adds Fiona (to allow clipping)
 
 ## v0.1 
-Initial release based in a mambaforge image plus some Xarray + Dask for CPU
+- Initial release based in a mambaforge image plus some Xarray + Dask for CPU

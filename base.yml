@@ -35,4 +35,5 @@ dependencies:
   - pillow
   - cmocean
   - progressbar2
+  - fiona
 prefix: /opt/conda
