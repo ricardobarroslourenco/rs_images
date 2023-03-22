@@ -12,8 +12,11 @@ Major updates here. For details, see the commit log.
 - Fix issue of creating a new conda env (instead, will be updating the base env)
 
 ### v0.2.3
-- Fix issue 
+- Fix issue on conda envs
 - Adds Fiona (to allow clipping)
+
+### v0.2.4
+- Adds PROJ binaries (try to fix fiona error when importing)
 
 ## v0.1 
 - Initial release based in a mambaforge image plus some Xarray + Dask for CPU

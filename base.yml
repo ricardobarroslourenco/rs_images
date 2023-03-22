@@ -36,4 +36,5 @@ dependencies:
   - cmocean
   - progressbar2
   - fiona
+  - proj
 prefix: /opt/conda
