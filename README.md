@@ -6,6 +6,11 @@ Released builds available at Docker Hub: https://hub.docker.com/repository/docke
 
 # Change Log
 Major updates here. For details, see the commit log.
+
+## v0.3 and v0.3.1
+- Adds pingouin
+- v0.3.1 in dockerhub is the same as v0.3, just fixing a building error.
+
 ## v0.2 
 - Adds Cartopy offline bases (for HPC usage)
 ### v0.2.2
