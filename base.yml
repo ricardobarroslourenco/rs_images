@@ -37,4 +37,5 @@ dependencies:
   - progressbar2
   - fiona
   - proj
+  - pingouin
 prefix: /opt/conda
