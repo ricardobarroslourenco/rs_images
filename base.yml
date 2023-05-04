@@ -38,4 +38,10 @@ dependencies:
   - fiona
   - proj
   - pingouin
+  - pandas
+  - seaborn
+  - shap
+  - scikit-learn
+  - interpret
+  - xgboost
 prefix: /opt/conda
