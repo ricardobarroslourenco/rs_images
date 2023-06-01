@@ -40,8 +40,9 @@ dependencies:
   - pingouin
   - pandas
   - seaborn
-  - shap
+  - shap == 0.41.0
   - scikit-learn
-  - interpret==0.4.2
+  - interpret == 0.4.2
   - xgboost
+  - numpy < 1.24.0
 prefix: /opt/conda
