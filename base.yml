@@ -42,6 +42,6 @@ dependencies:
   - seaborn
   - shap
   - scikit-learn
-  - interpret
+  - interpret==0.4.2
   - xgboost
 prefix: /opt/conda
