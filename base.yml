@@ -59,4 +59,5 @@ dependencies:
   - scipy
   - plotly
   - spatialpandas
+  - lxml
 prefix: /opt/conda
