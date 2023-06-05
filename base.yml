@@ -1,6 +1,8 @@
 name: base
 channels:
   - conda-forge
+  - pyviz
+  - nodefaults
 dependencies:
   - python >= 3
   - mamba
@@ -45,4 +47,16 @@ dependencies:
   - interpret == 0.4.2
   - xgboost
   - numpy < 1.24.0
+  - hvplot
+  - geoviews
+  - datashader
+  - geopandas
+  - networkx
+  - intake
+  - intake-xarray
+  - intake-parquet
+  - s3fs
+  - scipy
+  - plotly
+  - spatialpandas
 prefix: /opt/conda
