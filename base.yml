@@ -9,6 +9,8 @@ dependencies:
   - scikit-learn
   - scikit-image
   - jupyterlab
+  - conda
+  - mamba
   - pip
   - pip:
     - zenodo_get
