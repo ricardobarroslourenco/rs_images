@@ -1,62 +1,16 @@
 name: base
 channels:
   - conda-forge
-  - pyviz
-  - nodefaults
+  - defaults
 dependencies:
-  - python >= 3
-  - mamba
-  - conda
-  - pip
-  - setuptools=65
-  - dask
-  - netcdf4
-  - matplotlib
-  - cartopy
-  - cartopy_offlinedata
-  - jupyterlab
-  - geoviews
-  - distributed
-  - rasterio
-  - rioxarray
-  - xesmf
-  - nodejs
-  - dask-labextension
-  - gdal
-  - ca-certificates
-  - certifi
-  - openssl
-  - esmpy
+  - python=3.10
   - xarray
-  - numpy
-  - shapely
-  - cf_xarray
-  - sparse
-  - numba
-  - pyproj
-  - pillow
-  - cmocean
-  - progressbar2
-  - fiona
-  - proj
-  - pingouin
-  - pandas
-  - seaborn
-  - shap == 0.41.0
+  - matplotlib
   - scikit-learn
-  - interpret == 0.4.2
-  - xgboost
-  - numpy < 1.24.0
-  - hvplot
-  - geoviews
-  - datashader
-  - geopandas
-  - networkx
-  - intake
-  - intake-xarray
-  - intake-parquet
-  - s3fs
-  - scipy
-  - plotly
-  - spatialpandas
+  - scikit-image
+  - jupyterlab
+  - pip
+  - pip:
+    - zenodo_get
+    - netcdf4
 prefix: /opt/conda
